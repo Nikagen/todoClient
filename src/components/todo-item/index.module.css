@@ -1,0 +1,52 @@
+.todo-item {
+  max-width: 40%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.todo-item a:hover {
+  color: #3498db;
+}
+
+.todo-item .toggle-button,
+.todo-item .delete-button {
+  background-color: transparent;
+  color: #e74c3c;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.todo-item .toggle-button:hover,
+.todo-item .delete-button:hover {
+  color: #d62c1a;
+}
+
+.todo-item .toggle-button {
+  color: #2ecc71;
+}
+
+.todo-item .toggle-button:hover {
+  color: #25a25a;
+}
+
+@media screen and (max-width: 700px) {
+  .todo-item {
+    flex-direction: column;
+  }
+}
